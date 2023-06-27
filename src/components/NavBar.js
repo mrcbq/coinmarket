@@ -1,41 +1,24 @@
-import { Link, NavLink } from 'react-router-dom';
-import logo from '../logo.png';
+import { NavLink } from 'react-router-dom';
+import { BsFillMicFill, BsFillGearFill } from 'react-icons/bs';
+import { IoIosArrowBack } from 'react-icons/io';
 import './NavBar.css';
 
 export default function NavBar() {
   return (
     <div className="top">
-      <Link href="/">
-        <img
-          alt=""
-          src={logo}
-        />
-      </Link>
-      <h1 className="title">Coinmarket&apos; Hub</h1>
+      <NavLink to="/">
+        <IoIosArrowBack />
+      </NavLink>
+      <h1 className="title">Coinmarket</h1>
       <ul className="nav">
         <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? 'active a' : 'a')}
-            to="/"
-          >
-            Rockets
+          <NavLink to="/">
+            <BsFillMicFill />
           </NavLink>
         </li>
         <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? 'active a' : 'a')}
-            to="/coins"
-          >
-            Mission
-          </NavLink>
-        </li>
-        <p>|</p>
-        <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? 'active a' : 'a')}
-            to="/"
-          >
-            My Profile
+          <NavLink to="/coins">
+            <BsFillGearFill />
           </NavLink>
         </li>
       </ul>
