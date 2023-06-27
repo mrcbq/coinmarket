@@ -9,7 +9,7 @@ export default function NavBar() {
       <NavLink to="/">
         <IoIosArrowBack />
       </NavLink>
-      <h1 className="title">Coinmarket</h1>
+      <p className="title">COINMARKET</p>
       <ul className="nav">
         <li>
           <NavLink to="/">
