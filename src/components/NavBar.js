@@ -5,20 +5,20 @@ import './NavBar.css';
 
 export default function NavBar() {
   return (
-    <div className="top">
+    <div className="top" data-testid="navbar">
       <NavLink to="/">
-        <IoIosArrowBack />
+        <IoIosArrowBack data-testid="back-arrow" />
       </NavLink>
-      <h3 className="title">COINMARKET</h3>
+      <h3 className="title" data-testid="title">COINMARKET</h3>
       <ul className="nav">
         <li>
           <NavLink to="/">
-            <BsFillMicFill />
+            <BsFillMicFill data-testid="mic-icon" />
           </NavLink>
         </li>
         <li>
           <NavLink to="/">
-            <BsFillGearFill />
+            <BsFillGearFill data-testid="gear-icon" />
           </NavLink>
         </li>
       </ul>
