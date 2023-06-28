@@ -68,6 +68,7 @@
 
 label {
   display: flex;
+  color: aliceblue;
   flex-direction: column;
   margin: 0.5rem;
 }
