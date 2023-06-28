@@ -54,7 +54,9 @@
   table-layout: fixed;
   width: 100%;
 }
-
+.coin-container table tr:nth-child(odd) {
+  background-color: #4369b2;
+}
 .coin-container table th {
   display: flex;
 }
