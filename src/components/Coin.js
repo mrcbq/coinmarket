@@ -1,17 +1,24 @@
-import PropTypes, { string } from 'prop-types';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
-export default function Coin({ coin }) {
+export default function Coin() {
+  const { id } = useParams();
+  const { coins } = useSelector((store) => store.coins);
+
+  const findCoin = coins.find((coin) => coin.id === id);
   const {
-    id,
+    symbol,
     icon,
     marketCap,
     price,
     name,
     rank,
-    symbol,
     websiteUrl,
     priceChange1w,
-  } = { ...coin };
+  } = { ...findCoin };
+
+  console.log(findCoin);
+  console.log(id);
 
   return (
     <div className="coin-container">
@@ -53,7 +60,3 @@ export default function Coin({ coin }) {
     </div>
   );
 }
-
-Coin.propTypes = {
-  coin: PropTypes.objectOf(string).isRequired,
-};
