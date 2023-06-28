@@ -39,25 +39,24 @@
   background-color: #5687e3;
   height: 100vh;
   color: white;
+  overflow: hidden;
 }
-
 .coin-container > img {
-  width: 15%;
+  width: 50%;
+  max-width: 110px;
 }
 
-.coin-container tbody {
-  gap: 1rem;
+.coin-container table {
+  table-layout: fixed;
+  width: 100%;
 }
 
-.coin-container th {
+.coin-container table th {
   display: flex;
 }
 
-.coin-container td {
-  text-overflow: ellipsis;
-  width: 10%;
-  white-space: nowrap;
-  overflow: hidden;
+.coin-container table td {
+  word-wrap: break-word;
 }
 
 .select-container {

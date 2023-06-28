@@ -7,7 +7,7 @@ import CoinCard from './CoinCard';
 
 export default function Coins() {
   const { coins } = useSelector((store) => store.coins);
-  const [selectedRange, setSelectedRange] = useState('1-20');
+  const [selectedRange, setSelectedRange] = useState('1-100');
 
   const [start, end] = selectedRange.split('-').map(Number);
   const filteredCoins = coins.filter(
@@ -21,7 +21,6 @@ export default function Coins() {
       dispatch(getCoins());
     }
   });
-  console.log(coins);
 
   return (
     <div className="container">

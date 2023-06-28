@@ -1,9 +1,18 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { getCoins } from '../redux/coins/coinsSlice';
 
 export default function Coin() {
   const { id } = useParams();
   const { coins } = useSelector((store) => store.coins);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (coins.length === 0) {
+      dispatch(getCoins());
+    }
+  });
 
   const findCoin = coins.find((coin) => coin.id === id);
   const {
@@ -16,9 +25,6 @@ export default function Coin() {
     websiteUrl,
     priceChange1w,
   } = { ...findCoin };
-
-  console.log(findCoin);
-  console.log(id);
 
   return (
     <div className="coin-container">
@@ -36,21 +42,26 @@ export default function Coin() {
             <td>{parseFloat(price).toFixed(2)}</td>
           </tr>
           <tr>
-            <th>Market Cap</th>
-            <td>{marketCap}</td>
+            <th>MarketCap</th>
+            <td>{parseFloat(marketCap).toFixed(0)}</td>
           </tr>
           <tr>
             <th>Symbol</th>
             <td>{symbol}</td>
           </tr>
           <tr>
-            <th>Price Change</th>
+            <th>% Price 1W</th>
             <td>{priceChange1w}</td>
           </tr>
           <tr>
             <th>Website</th>
             <td>
-              <a href={websiteUrl} aria-label={id}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={websiteUrl}
+                aria-label={id}
+              >
                 {websiteUrl}
               </a>
             </td>
