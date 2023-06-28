@@ -16,10 +16,12 @@
   align-items: center;
   color: white;
 }
-.coins-container>a {
+
+.coins-container > a {
   background-color: #3e64a7;
 }
-.coins-container>a:nth-child(odd) {
+
+.coins-container > a:nth-child(odd) {
   background-color: #4369b2;
 }
 
