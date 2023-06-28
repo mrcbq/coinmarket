@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import { HashRouter } from 'react-router-dom';
 import coinsReducer from '../redux/coins/coinsSlice';
-import CoinCard from './CoinCard';
+import CoinCard from '../components/CoinCard';
 
 it('displays the corresponding coins', () => {
   const store = configureStore({

@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { BsFillMicFill, BsFillGearFill } from 'react-icons/bs';
 import { IoIosArrowBack } from 'react-icons/io';
-import './NavBar.css';
+import './styles/NavBar.css';
 
 export default function NavBar() {
   return (

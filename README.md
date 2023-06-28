@@ -33,8 +33,6 @@
 
 The Coinmarket is a web application that displays information about the top 100 cryptocurrencies in the world. The application shows the top 100 and allows users to select a cryptocurrency to view more information about it, such as Market Capitalization, price, price change in the last week, rank, and website.
 
-It is based on the original design idea by Nelson Sakwa on Behance. You can find the original design at https://www.behance.net/sakwadesignstudio
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -177,6 +175,8 @@ If you like this project, give it a ⭐️!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 We would like to thank Microverse for giving us the opportunity to learn and grow as developers and also we like to thank our families, they are all our support. 🌟
+
+The design of this project is based on the original design idea by Nelson Sakwa on Behance. You can find the original design at https://www.behance.net/sakwadesignstudio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

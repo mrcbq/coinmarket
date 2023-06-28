@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { getCoins } from '../redux/coins/coinsSlice';
-import './Coins.css';
+import './styles/Coins.css';
 import CoinCard from './CoinCard';
 
 export default function Coins() {
