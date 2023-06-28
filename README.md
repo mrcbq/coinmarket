@@ -31,8 +31,9 @@
 
 # 📖 coinmarket<a name="about-project"></a>
 
-The coinmarket is an Web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+The Coinmarket is a web application that displays information about the top 100 cryptocurrencies in the world. The application shows the top 100 and allows users to select a cryptocurrency to view more information about it, such as Market Capitalization, price, price change in the last week, rank, and website.
 
+It is based on the original design idea by Nelson Sakwa on Behance. You can find the original design at https://www.behance.net/sakwadesignstudio
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -69,7 +70,6 @@ The coinmarket is an Web application for a company that provides commercial and 
 - **Coinmarket using React and Redux**
 - **Client-side routing using React Router V6**
 - **Gitflow is used correctly**
-- **Work is documented in a professional manner**
 - **Following best practices for HTML, CSS, JS**
 
 <!-- LIVE DEMO -->
@@ -78,6 +78,8 @@ The coinmarket is an Web application for a company that provides commercial and 
 
 
 🚀 Live demo of this project [here](https://mrcbq.github.io/coinmarket/)
+
+🚀 Video Info of this project [here](https://www.loom.com/share/279e68533eff49ba96d9cff99fea06fe?sid=9782b2e3-434e-4784-b360-113ba015f086)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
