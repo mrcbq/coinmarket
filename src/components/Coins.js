@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getCoins } from '../redux/coins/coinsSlice';
 import './Coins.css';
+import Coin from './Coin';
 
 export default function Coins() {
   const { coins } = useSelector((store) => store.coins);
@@ -13,29 +14,11 @@ export default function Coins() {
     }
   }, []);
 
-  console.log(coins);
+  console.log(coins[1]);
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Coins</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th> </th>
-        </tr>
-      </thead>
-      <tbody>
-        {/* {Coins.map((Coins) => (
-          <Coins
-            key={Coins.Coins_id}
-            id={Coins.Coins_id}
-            name={Coins.Coins_name}
-            description={Coins.description}
-            isMember={Coins.isMember ?? false}
-          />
-        ))} */}
-      </tbody>
-    </table>
+    <div className="coins-container">
+      <Coin coin={coins[0]} />
+    </div>
   );
 }
