@@ -1,11 +1,9 @@
-import PropTypes, { string } from 'prop-types';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-export default function CoinCard({ coin }) {
-  const {
-    icon, price, symbol, id,
-  } = { ...coin };
-
+export default function CoinCard({
+  icon, price, symbol, id,
+}) {
   return (
     <Link to={`/coin/${id}`}>
       <div className="coin-card">
@@ -18,5 +16,8 @@ export default function CoinCard({ coin }) {
 }
 
 CoinCard.propTypes = {
-  coin: PropTypes.objectOf(string).isRequired,
+  icon: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  symbol: PropTypes.string.isRequired,
 };

@@ -41,7 +41,13 @@ export default function Coins() {
       </div>
       <div className="coins-container">
         {filteredCoins.map((coin) => (
-          <CoinCard key={coin.id} coin={coin} />
+          <CoinCard
+            key={coin.id}
+            id={coin.id}
+            icon={coin.icon}
+            price={coin.price}
+            symbol={coin.symbol}
+          />
         ))}
       </div>
     </div>
