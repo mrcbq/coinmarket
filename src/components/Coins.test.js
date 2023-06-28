@@ -1,9 +1,8 @@
-import { render, fireEvent, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import { HashRouter } from 'react-router-dom';
 import coinsReducer from '../redux/coins/coinsSlice';
-import Coins from './Coins';
 import CoinCard from './CoinCard';
 
 it('displays the corresponding coins', () => {
