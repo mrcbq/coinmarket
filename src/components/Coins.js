@@ -25,17 +25,22 @@ export default function Coins() {
 
   return (
     <div className="container">
-      <select
-        value={selectedRange}
-        onChange={(e) => setSelectedRange(e.target.value)}
-      >
-        <option value="1-20">1-20</option>
-        <option value="21-40">21-40</option>
-        <option value="41-60">41-60</option>
-        <option value="61-80">61-80</option>
-        <option value="81-100">81-100</option>
-      </select>
-      ;
+      <div className="select-container">
+        <label htmlFor="range-selector">
+          Select coins by ranks:
+          <select
+            id="range-selector"
+            value={selectedRange}
+            onChange={(e) => setSelectedRange(e.target.value)}
+          >
+            <option value="1-20">1-20</option>
+            <option value="21-40">21-40</option>
+            <option value="41-60">41-60</option>
+            <option value="61-80">61-80</option>
+            <option value="81-100">81-100</option>
+          </select>
+        </label>
+      </div>
       <div className="coins-container">
         {filteredCoins.map((coin) => (
           <CoinCard key={coin.id} coin={coin} />
