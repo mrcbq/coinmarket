@@ -28,6 +28,7 @@ export default function Coins() {
           Select coins by ranks:
           <select
             id="range-selector"
+            data-testid="range-selector"
             value={selectedRange}
             onChange={(e) => setSelectedRange(e.target.value)}
           >
