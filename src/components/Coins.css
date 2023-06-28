@@ -59,16 +59,19 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
 .select-container {
   display: flex;
   flex-direction: column;
   align-self: center;
 }
+
 label {
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
 }
+
 #range-selector {
   display: flex;
   width: 10rem;
@@ -82,4 +85,3 @@ label {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
