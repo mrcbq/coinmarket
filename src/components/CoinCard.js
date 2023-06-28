@@ -6,7 +6,7 @@ export default function CoinCard({
 }) {
   return (
     <Link to={`/coin/${id}`}>
-      <div className="coin-card">
+      <div className="coin-card" data-testid="coin-card">
         <h2>{symbol}</h2>
         <img src={icon} alt={symbol} />
         <p>{parseFloat(price).toFixed(2)}</p>
