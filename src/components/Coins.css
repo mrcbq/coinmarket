@@ -1,12 +1,10 @@
 .container {
   width: 100%;
 }
+
 .coins-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-  /* justify-items: center; */
-  /* width: 100%; */
-  /* margin: 2em auto; */
 }
 
 .coin-card {
@@ -16,8 +14,8 @@
   align-items: center;
   background-color: #3e64a7;
   color: white;
-  /* max-width: 10rem; */
 }
+
 .coin-card:nth-child(odd) {
   background-color: #4369b2;
 }
@@ -25,10 +23,12 @@
 .coin-card > img {
   width: 3rem;
 }
+
 .coin-card > p {
   word-wrap: break-word;
   max-width: 7rem;
 }
+
 .coin-container {
   display: flex;
   padding: 2rem;
