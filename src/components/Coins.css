@@ -1,5 +1,34 @@
+.container {
+  width: 100%;
+}
+.coins-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  /* justify-items: center; */
+  /* width: 100%; */
+  /* margin: 2em auto; */
+}
+
+.coin-card {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5687e3;
+  color: white;
+  /* max-width: 10rem; */
+}
+
+.coin-card > img {
+  width: 3rem;
+}
+.coin-card > p {
+  word-wrap: break-word;
+  max-width: 7rem;
+}
 .coin-container {
   display: flex;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
   background-color: #5687e3;
@@ -17,4 +46,11 @@
 
 .coin-container th {
   display: flex;
+}
+
+.coin-container td {
+  text-overflow: ellipsis;
+  width: 10%;
+  white-space: nowrap;
+  overflow: hidden;
 }

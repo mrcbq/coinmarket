@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getCoins } from '../redux/coins/coinsSlice';
+// import Coin from './Coin';
 import './Coins.css';
-import Coin from './Coin';
+import CoinCard from './CoinCard';
 
 export default function Coins() {
   const { coins } = useSelector((store) => store.coins);
@@ -12,13 +13,18 @@ export default function Coins() {
     if (coins.length === 0) {
       dispatch(getCoins());
     }
-  }, []);
+  });
 
-  console.log(coins[1]);
+  console.log(coins);
 
   return (
-    <div className="coins-container">
-      <Coin coin={coins[0]} />
+    <div className="container">
+      <div className="coins-container">
+        {coins.map((coin) => (
+          <CoinCard key={coin.id} coin={coin} />
+        ))}
+        {/* <Coin coin={coins[0]} /> */}
+      </div>
     </div>
   );
 }

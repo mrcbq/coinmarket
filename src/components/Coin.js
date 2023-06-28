@@ -13,7 +13,6 @@ export default function Coin({ coin }) {
     priceChange1w,
   } = { ...coin };
 
-  console.log(rank);
   return (
     <div className="coin-container">
       <h2>{name}</h2>
@@ -22,27 +21,27 @@ export default function Coin({ coin }) {
       <table>
         <tbody>
           <tr>
-            <th>Rank:</th>
+            <th>Rank</th>
             <td>{rank}</td>
           </tr>
           <tr>
-            <th> Price:</th>
+            <th> Price</th>
             <td>{price}</td>
           </tr>
           <tr>
-            <th>MarketCap:</th>
+            <th>Market Cap</th>
             <td>{marketCap}</td>
           </tr>
           <tr>
-            <th>Symbol:</th>
+            <th>Symbol</th>
             <td>{symbol}</td>
           </tr>
           <tr>
-            <th>Price Change in a week:</th>
+            <th>Price Change</th>
             <td>{priceChange1w}</td>
           </tr>
           <tr>
-            <th>Website:</th>
+            <th>Website</th>
             <td>
               <a href={websiteUrl} aria-label={id}>
                 {websiteUrl}
