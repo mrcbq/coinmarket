@@ -14,9 +14,12 @@
   padding: 2rem;
   flex-direction: column;
   align-items: center;
-  background-color: #5687e3;
+  background-color: #3e64a7;
   color: white;
   /* max-width: 10rem; */
+}
+.coin-card:nth-child(odd) {
+  background-color: #4369b2;
 }
 
 .coin-card > img {
