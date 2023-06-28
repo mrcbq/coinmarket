@@ -26,7 +26,7 @@ export default function Coin({ coin }) {
           </tr>
           <tr>
             <th> Price</th>
-            <td>{price}</td>
+            <td>{parseFloat(price).toFixed(2)}</td>
           </tr>
           <tr>
             <th>Market Cap</th>

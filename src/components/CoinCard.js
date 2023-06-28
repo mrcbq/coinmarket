@@ -7,7 +7,7 @@ export default function CoinCard({ coin }) {
     <div className="coin-card">
       <h2>{symbol}</h2>
       <img src={icon} alt={symbol} />
-      <p>{price.toString().substring(0, 8)}</p>
+      <p>{parseFloat(price).toFixed(2)}</p>
     </div>
   );
 }
