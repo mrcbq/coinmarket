@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/coinmarket/static/css/main.c0b617ff.css",
-    "main.js": "/coinmarket/static/js/main.e1a791de.js",
+    "main.css": "/coinmarket/static/css/main.a04132ef.css",
+    "main.js": "/coinmarket/static/js/main.47bef5ea.js",
     "index.html": "/coinmarket/index.html",
-    "main.c0b617ff.css.map": "/coinmarket/static/css/main.c0b617ff.css.map",
-    "main.e1a791de.js.map": "/coinmarket/static/js/main.e1a791de.js.map"
+    "main.a04132ef.css.map": "/coinmarket/static/css/main.a04132ef.css.map",
+    "main.47bef5ea.js.map": "/coinmarket/static/js/main.47bef5ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0b617ff.css",
-    "static/js/main.e1a791de.js"
+    "static/css/main.a04132ef.css",
+    "static/js/main.47bef5ea.js"
   ]
 }
