@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { getCoins } from '../redux/coins/coinsSlice';
-// import Coin from './Coin';
 import './Coins.css';
 import CoinCard from './CoinCard';
 
@@ -44,7 +43,6 @@ export default function Coins() {
         {filteredCoins.map((coin) => (
           <CoinCard key={coin.id} coin={coin} />
         ))}
-        {/* <Coin coin={coins[0]} /> */}
       </div>
     </div>
   );

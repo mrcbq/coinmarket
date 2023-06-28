@@ -6,7 +6,6 @@ const API_URL = 'https://api.coinstats.app/public/v1/coins';
 export const getCoins = createAsyncThunk('coins/getCoins', async () => {
   try {
     const response = await axios.get(API_URL);
-    // console.log(response.data);
     return response.data;
   } catch (error) {
     throw new Error(error.message);
@@ -30,7 +29,6 @@ const coinsSlice = createSlice({
     builder.addCase(getCoins.fulfilled, (state, action) => {
       state.status = 'fulfilled';
       state.coins = action.payload.coins;
-      // console.log(state.coins);
     });
     builder.addCase(getCoins.rejected, (state, action) => {
       state.status = 'rejected';
